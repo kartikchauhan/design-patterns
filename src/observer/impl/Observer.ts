@@ -1,4 +1,4 @@
 export interface Observer {
     id: number;
-    update(): void;
+    update(value: number): void;
 }

@@ -16,9 +16,9 @@ export class Subject {
         }
     }
 
-    public notifyObservers() {
+    public notifyObservers(value: number) {
         for (let observer of this.observers) {
-            observer.update();
+            observer.update(value);
         }
     }
 }

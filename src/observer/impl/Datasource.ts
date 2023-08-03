@@ -13,6 +13,6 @@ export class DataSource extends Subject {
 
     set value(val: number) {
         this._value = val;
-        this.notifyObservers();
+        this.notifyObservers(this._value);
     }
 }

@@ -15,7 +15,7 @@ export class Spreadsheet implements Observer {
         return this._id;
     }
 
-    public update(): void {
-        console.log(`Spreadsheet updated`);
+    public update(value: number): void {
+        console.log(`Spreadsheet updated with value ${value}`);
     }
 }

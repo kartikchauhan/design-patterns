@@ -15,7 +15,7 @@ export class Chart implements Observer {
         return this._id;
     }
     
-    update(): void {
-        console.log(`Chart updated`);
+    update(value: number ): void {
+        console.log(`Chart updated with value ${value}`);
     }
 }
