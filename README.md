@@ -1,7 +1,7 @@
 ## Design patterns
 
 ### Memento
-![memento-uml-1](./src/memento/uml.jpg)
+![memento-uml-1](./uml.jpg)
 
 ![memento-uml-2](./src/memento/uml-2.jpg)
 
