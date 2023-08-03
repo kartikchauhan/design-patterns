@@ -16,9 +16,15 @@ export class Subject {
         }
     }
 
-    public notifyObservers(value: number) {
+    // public notifyObservers(value: number) { // push style communication
+    //     for (let observer of this.observers) {
+    //         observer.update(value);
+    //     }
+    // }
+
+    public notifyObservers() { // pull style communication
         for (let observer of this.observers) {
-            observer.update(value);
+            observer.update();
         }
     }
 }

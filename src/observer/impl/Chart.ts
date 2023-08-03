@@ -1,9 +1,12 @@
+import { DataSource } from "./Datasource";
 import { Observer } from "./Observer";
 
 export class Chart implements Observer {
     public _id: number = 1;
+    private _dataSource: DataSource;
 
-    constructor(id: number) {
+    constructor(id: number, dataSource: DataSource) {
+        this._dataSource = dataSource;
         this.id = id;
     }
     
@@ -15,7 +18,11 @@ export class Chart implements Observer {
         return this._id;
     }
     
-    update(value: number ): void {
-        console.log(`Chart updated with value ${value}`);
+    // update(value: number): void { // push style communication
+    //     console.log(`Chart updated with value ${value}`);
+    // }
+
+    update(): void { // pull style communication
+        console.log(`Chart updated with value ${this._dataSource.getValue()}`);
     }
 }

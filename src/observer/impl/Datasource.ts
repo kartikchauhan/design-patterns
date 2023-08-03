@@ -1,18 +1,20 @@
 import { Subject } from "./Subject";
 
 export class DataSource extends Subject {
-    private _value: number = Infinity;
+    private value: number = Infinity;
 
     constructor() {
         super();
     }
 
-    get value(): number {
-        return this._value;
+    getValue(): number {
+        return this.value;
     }
 
-    set value(val: number) {
-        this._value = val;
-        this.notifyObservers(this._value);
-    }
+    setValue(val: number) {
+        this.value = val;
+
+        // this.notifyObservers(this._value); // push style communication
+        this.notifyObservers();
+    } 
 }
