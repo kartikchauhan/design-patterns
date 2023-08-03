@@ -6,6 +6,6 @@
 ![memento-uml-2]("./src/memento/uml-2.png")
 
 ### State
-![state-uml-1]("./src/state/uml.jpg")
+<!-- ![state-uml-1]("./src/state/uml.jpg") -->
 
-![state-uml-2]("src/state/uml-2.jpg")
+![state-uml-2]("uml-2.jpg")
